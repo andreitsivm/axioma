@@ -42,7 +42,7 @@ const Header = (props) => {
           alignItems="center"
           p={3}
         >
-          <Box as={Link} href="/" passHref sx={{
+          <Box as={Link} href="/" sx={{
                 cursor:'pointer'
               }}
           >

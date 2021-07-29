@@ -9,7 +9,7 @@ const Link = ({ isExternal, href, children, ...rest }) => {
       {children}
     </ChakraLink>
   ) : (
-    <NextLink href={href}  passHref>
+    <NextLink href={href}>
       <ChakraLink {...rest}>{children}</ChakraLink>
     </NextLink>
   );
