@@ -1,8 +1,8 @@
 import {Fragment} from 'react'
-import {Box,Heading,Text,Container} from '@chakra-ui/react'
+import {Flex,Heading,Text,Container} from '@chakra-ui/react'
 import Head from 'next/head'
 import Section from 'components/section'
-import Row, {Column} from 'components/row'
+import Card from 'components/benefit-card'
 
 
 
@@ -15,35 +15,61 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      
-   
-        <Section background="#000">
+
+
+        <Section py="150px" bgGradient="radial-gradient(42.08% 89.72% at 46.94% 75.39%, #E73700 0%, #1A1A1A 100%);">
           <Container>
-        <Row>
-          <Column>12</Column>
-          <Column>12</Column>
-        </Row>
+            <Flex justify="center" align="center">
+        <Heading color="basic.0" maxW="700px" textAlign={{ base: "center", md: "left" }} as="h1" variant="h1">Quote - repeat or copy out (a group of words from a text)</Heading>
+            </Flex>
         </Container>
       </Section>
-        <Container>
+        <Container py={{base: '32px', md: '64px'}}>
           <Heading
-            as="h1"
+            as="h2"
             variant="h1"
             color="basic.5"
-            textAlign={{ base: "center", md: "left" }}
+
           >
-            Covalent Ambassadors Program
+            Technologies
           </Heading>
-          <Text color="basic.5" textAlign={{ base: "center", md: "left" }}>
-            At Covalent, we are on a mission to bring full transparency and
-            visibility to assets across the entire Web3 ecosystem. We want you
-            to be an extension of our team. As a Covalent Alchemist, you will
-            act as a key leader in developing the Covalent ecosystem. We are
-            dedicated to investing in your growth & development of all levels to
-            help you succeed. Become a Covalent Alchemist Ambassador and help
-            shape the data infrastructure layer of tomorrow.
+          <Text maxW="500px">
+              It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
           </Text>
+
+            <Flex flexWrap="wrap" justify="space-between">
+               <Card>Cloud/Back-end solutions</Card>
+               <Card>API and integrations</Card>
+               <Card>Mobile and web apps</Card>
+               <Card>Content management</Card>
+               <Card>BT/BLE/WiFi connectivity</Card>
+               <Card>Security</Card>
+            </Flex>
         </Container>
+
+          <Section py="150px" bgGradient="radial-gradient(42.08% 89.72% at 46.94% 75.39%, #E73700 0%, #1A1A1A 100%);">
+              <Container>
+
+                      <Heading color="basic.0"
+                               maxW="700px"
+                               textAlign={{ base: "center", md: "left" }} as="h1"
+                               variant="h1">Testimonials</Heading>
+
+              </Container>
+          </Section>
+
+          <Section py="150px" >
+              <Container>
+
+                  <Heading color="basic.5"
+                           maxW="700px"
+                           textAlign={{ base: "center", md: "left" }} as="h1"
+                           variant="h1">Let`s Talk</Heading>
+                        <Text>
+                            It is a long established fact that a reader will be distracted by the readable content of
+                        </Text>
+              </Container>
+          </Section>
 
       </Fragment>
   )
