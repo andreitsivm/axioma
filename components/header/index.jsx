@@ -23,6 +23,7 @@ const Header = (props) => {
         as="header"
         background="secondary.1"
         height="84px"
+        width="100%"
         display="flex"
         alignItems="center"
         sx={{
@@ -52,7 +53,7 @@ const Header = (props) => {
               src={logo}
               mr={2}
               alt="logo"
-              
+
             />
           </Box>
           <Desktop />
