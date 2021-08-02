@@ -1,7 +1,7 @@
 import React, { Fragment, useRef } from "react";
-import { Flex, Box, Text,Container } from "@chakra-ui/react";
-import Link from 'components/link'
-import Image from 'next/image'
+import { Flex, Box, Text, Container } from "@chakra-ui/react";
+import Link from "components/link";
+import Image from "next/image";
 
 import useOnScreen from "hooks/useOnScreen";
 import Desktop from "./desktop";
@@ -43,18 +43,15 @@ const Header = (props) => {
           alignItems="center"
           p={3}
         >
-          <Box as={Link} href="/" sx={{
-                cursor:'pointer'
-              }}
+          <Box
+            as={Link}
+            href="/"
+            onClick={() => window.scroll(0, 0)}
+            sx={{
+              cursor: "pointer",
+            }}
           >
-            <Image
-              width='130px'
-              height='48px'
-              src={logo}
-              mr={2}
-              alt="logo"
-
-            />
+            <Image width="130px" height="48px" src={logo} mr={2} alt="logo" />
           </Box>
           <Desktop />
           <Mobile />

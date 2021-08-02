@@ -12,11 +12,14 @@ const Desktop = () => (
     alignItems="center"
     ml="auto"
   >
-      <Link variant="headerLink" href="/about/" mx={2}>
-      About Covalent
+      <Link variant="headerLink" href="/#technologies" mx={2}>
+      TECHNOLOGIES
     </Link>
-    <Link variant="headerLink" href="/contacts/" mx={2}>
-      Contacts
+    <Link variant="headerLink" href="/#feedback" mx={2}>
+    FEEDBACK
+    </Link>
+    <Link variant="headerLink" href="/#contact" mx={2}>
+    LET’S TALK
     </Link>
   </Flex>
 );

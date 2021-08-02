@@ -51,9 +51,9 @@ const theme = extendTheme({
     large: "0 8px 16px rgba(0, 0, 0, 0.16)",
   },
   colors: {
-    basic: ["#FFFFFF", "#F7F7F7", "#E0E0E1", "#E5E5E5", "#7A797C", "#00010D"],
-    primary: "#00D8D5",
-    secondary: ["#FF4C8B", "#000426", "#000426"],
+    basic: ["#FFFFFF", "#F7F7F7", "#E0E0E1", "#E5E5E5", "#7A797C", "#1A1A1A"],
+    primary: "#E73700",
+    secondary: ["#00BAAF", "#5200BA"],
     alert: {
       error: "#F44336",
       ok: "#0ABF53",
@@ -134,10 +134,10 @@ const theme = extendTheme({
         },
       },
     },
-    Container:{
-      baseStyle:{
-        maxW:'container.xl'
-      }
+    Container: {
+      baseStyle: {
+        maxW: "container.xl",
+      },
     },
     Heading: {
       baseStyle: { fontWeight: "normal" },
