@@ -1,9 +1,11 @@
 import { Fragment } from "react";
 import { Box, Flex, Heading, Text, Container } from "@chakra-ui/react";
+import Image from "next/image";
 import Head from "next/head";
 import Section from "components/section";
 import Card from "components/benefit-card";
 import Testimonials from "components/testimonials";
+import city from "images/city.svg";
 
 export default function Home() {
   return (
@@ -76,6 +78,16 @@ export default function Home() {
           <Box>
             <Testimonials />
           </Box>
+        </Container>
+      </Section>
+
+      <Section>
+        <Container>
+          <Heading as="h2" variant="h1">
+            We are in Lviv
+          </Heading>
+          <Text>60A Fedkovycha Street, Lviv 79018, Ukraine</Text>
+          <Image src={city} alt="Lviv" width={1024} height={552} />
         </Container>
       </Section>
     </Fragment>

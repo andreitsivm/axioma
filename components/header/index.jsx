@@ -9,7 +9,7 @@ import Mobile from "./mobile";
 import logo from "images/logo--white.svg";
 
 const scrollStyles = {
-  background: "basic.5",
+  background: "secondary.1",
 };
 
 const Header = (props) => {
@@ -21,7 +21,7 @@ const Header = (props) => {
       <Box ref={refBox} height="1px" bg="secondary.1" {...props} />
       <Box
         as="header"
-        background="secondary.1"
+        background="basic.5"
         height="84px"
         width="100%"
         display="flex"

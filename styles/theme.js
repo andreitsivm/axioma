@@ -27,6 +27,7 @@ const theme = extendTheme({
     body: "Titillium Web, sans-serif",
   },
   radii: {
+    none: "0px",
     small: "8px",
     medium: "16px",
     large: "24px",
@@ -61,6 +62,32 @@ const theme = extendTheme({
     },
   },
   components: {
+    Input: {
+      baseStyle: {
+        field: {
+          background: "#331E17",
+          border: "1px solid #E73700",
+          boxSizing: "border-box",
+          color: "basic.0",
+          _placeholder: { color: "basic.0" },
+        },
+      },
+      defaultProps: {
+        variant: "",
+      },
+    },
+    Textarea: {
+      baseStyle: {
+        backgroundColor: "#331E17",
+        border: "1px solid #E73700",
+        boxSizing: "border-box",
+        color: "basic.0",
+        _placeholder: { color: "basic.0" },
+      },
+      defaultProps: {
+        variant: "",
+      },
+    },
     Link: {
       baseStyle: {
         color: "secondary.0",
@@ -173,14 +200,15 @@ const theme = extendTheme({
         px: "24px",
         py: "14px",
         color: "basic.0",
-        bg: "secondary.0",
+        bg: "primary",
         transition: "background-color 0.3s ease",
         _focus: {
           outline: "none",
         },
         _hover: {
-          bg: "primary",
+          bg: "secondary.1",
           textDecoration: "none",
+          cursor: "pointer",
         },
       },
       sizes: {

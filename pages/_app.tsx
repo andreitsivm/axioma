@@ -6,6 +6,7 @@ import Page from "components/page";
 import "swiper/swiper-bundle.min.css";
 
 function MyApp({ Component, pageProps }: AppProps) {
+  console.log(theme);
   return (
     <ThemeProvider theme={theme}>
       <Page>
