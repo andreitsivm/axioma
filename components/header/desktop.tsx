@@ -1,25 +1,25 @@
-import React from "react";
-import { Flex } from "@chakra-ui/react";
-import Link from "components/link";
+import React from 'react';
+import { Flex } from '@chakra-ui/react';
+import Link from 'components/link';
 
 const Desktop = () => (
   <Flex
     as="nav"
     display={{
-      base: "none",
-      lg: "block",
+      base: 'none',
+      lg: 'block',
     }}
     alignItems="center"
     ml="auto"
   >
-      <Link variant="headerLink" href="/#technologies" mx={2}>
+    <Link variant="headerLink" href="/#technologies" mx={2}>
       TECHNOLOGIES
     </Link>
     <Link variant="headerLink" href="/#feedback" mx={2}>
-    FEEDBACK
+      FEEDBACK
     </Link>
     <Link variant="headerLink" href="/#contact" mx={2}>
-    LET’S TALK
+      LET’S TALK
     </Link>
   </Flex>
 );

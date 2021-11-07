@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React, { FC, Fragment, ReactNode } from 'react';
 import { Box, Heading, Text, Container } from '@chakra-ui/react';
 import {
     FaGithub,
@@ -10,7 +10,11 @@ import Link from 'components/link';
 import ContactForm from 'components/contact-form';
 import Row, { Column } from 'components/row';
 
-const Footer = (props) => {
+type Props = {
+    [x:string]: any
+}
+
+const Footer:FC<Props> = (props) => {
     return (
         <Fragment>
             <Box

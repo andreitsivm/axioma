@@ -21,12 +21,7 @@
   "include": [
     "next-env.d.ts",
     "**/*.ts",
-    "**/*.tsx",
-    "components/section/index.jsx",
-    "pages/index.jsx",
-    "components/testimonials/index.jsx",
-    "components/page/index.jsx",
-    "components/benefit-card/index.jsx"
+    "**/*.tsx"
   ],
   "exclude": ["node_modules"]
 }

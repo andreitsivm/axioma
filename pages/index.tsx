@@ -1,21 +1,18 @@
-import { Fragment } from "react";
-import { Box, Flex, Heading, Text, Container } from "@chakra-ui/react";
-import Image from "next/image";
-import Head from "next/head";
-import Section from "components/section";
-import Card from "components/benefit-card";
-import Testimonials from "components/testimonials";
-import city from "images/city.svg";
+import { Fragment } from 'react';
+import { Box, Flex, Heading, Text, Container } from '@chakra-ui/react';
+import Image from 'next/image';
+import Head from 'next/head';
+import Section from 'components/section';
+import Card from 'components/benefit-card';
+import Testimonials from 'components/testimonials';
+import city from 'images/city.svg';
 
 export default function Home() {
   return (
     <Fragment>
       <Head>
         <title>AXIOMA MOBILE DEVELOPMENT</title>
-        <meta
-          name="description"
-          content="AXIOMA — mobile development company"
-        />
+        <meta name="description" content="AXIOMA — mobile development company" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -28,7 +25,7 @@ export default function Home() {
             <Heading
               color="basic.0"
               maxW="700px"
-              textAlign={{ base: "center", md: "left" }}
+              textAlign={{ base: 'center', md: 'left' }}
               as="h1"
               variant="h1"
             >
@@ -38,16 +35,15 @@ export default function Home() {
         </Container>
       </Section>
 
-      <Container id="technologies" py={{ base: "32px", md: "64px" }}>
+      <Container id="technologies" py={{ base: '32px', md: '64px' }}>
         <Heading as="h2" variant="h1" color="basic.5">
           Technologies
         </Heading>
         <Text maxW="500px">
-          It is a long established fact that a reader will be distracted by the
-          readable content of a page when looking at its layout. The point of
-          using Lorem Ipsum is that it has a more-or-less normal distribution of
-          letters, as opposed to using content here, making it look like
-          readable English.
+          It is a long established fact that a reader will be distracted by the readable content of
+          a page when looking at its layout. The point of using Lorem Ipsum is that it has a
+          more-or-less normal distribution of letters, as opposed to using content here, making it
+          look like readable English.
         </Text>
 
         <Flex flexWrap="wrap" justify="space-between">
@@ -69,7 +65,7 @@ export default function Home() {
           <Heading
             color="basic.0"
             maxW="700px"
-            textAlign={{ base: "center", md: "left" }}
+            textAlign={{ base: 'center', md: 'left' }}
             as="h1"
             variant="h1"
           >
