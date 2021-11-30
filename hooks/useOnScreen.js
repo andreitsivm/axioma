@@ -1,13 +1,7 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect } from 'react';
 
 const useOnScreen = (ref, options = {}) => {
-  const {
-    init = true,
-    once = false,
-    root = null,
-    rootMargin = "0px",
-    threshold = 0,
-  } = options;
+  const { init = true, once = false, root = null, rootMargin = '0px', threshold = 0 } = options;
   const [isIntersecting, setIntersecting] = useState(init);
 
   useEffect(() => {
@@ -28,7 +22,7 @@ const useOnScreen = (ref, options = {}) => {
         root,
         rootMargin,
         threshold,
-      }
+      },
     );
 
     if (current) {

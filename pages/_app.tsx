@@ -1,12 +1,11 @@
-import "../styles/globals.css";
-import type { AppProps } from "next/app";
-import { ThemeProvider } from "@chakra-ui/react";
-import theme from "../styles/theme";
-import Page from "components/page";
-import "swiper/swiper-bundle.min.css";
+import '../styles/globals.css';
+import type { AppProps } from 'next/app';
+import { ThemeProvider } from '@chakra-ui/react';
+import theme from '../styles/theme';
+import Page from 'components/page';
+import 'swiper/swiper-bundle.min.css';
 
 function MyApp({ Component, pageProps }: AppProps) {
-  console.log(theme);
   return (
     <ThemeProvider theme={theme}>
       <Page>
